@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Clock System</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+</head>
+<body>	
+	<header>
+		<div class="row center-xs">
+			<div class="col-xs-12 col-sm-8 col-md-6 col-lg-4">
+              <p>Clock System</p>  	
+        	</div>
+		</div>
+	</header>
+	
+	<div class="row center-xs">
+		<div class="col-xs-12">
+			<div id="app">
+				<clock></clock>
+			</div>
+		</div>
+	</div>		
+	
+	<div class="row center-xs">
+		<div class="col-xs-12">
+			<button class="btn"><span>Click me!</span></button>
+		</div>
+	</div>
+	
+	<template id="clock-template">
+		<div class="analog-clock">
+            <svg width="140" height="140">
+                <circle id="clock-face" cx="70" cy="70" r="65" />
+                <line id="h-hand" x1="70" y1="70" x2="70" y2="38" />
+                <line id="m-hand" x1="70" y1="70" x2="70" y2="20" />
+                <line id="m-tail" x1="70" y1="70" x2="70" y2="60" />
+                <line id="s-hand" x1="70" y1="70" x2="70" y2="12" />
+                <line id="s-tail" x1="70" y1="70" x2="70" y2="56" />
+                <text x="62"  y="18">12</text>
+                <text x="90"  y="30">14</text>
+                <text x="110" y="50">16</text>
+                <text x="115" y="76">18</text>
+                <text x="107" y="100">20</text>
+                <text x="90"  y="120">22</text>
+                <text x="66"  y="130">24</text>
+                <text x="40"  y="125">02</text>
+                <text x="20"  y="104">04</text>
+                <text x="7"   y="76">06</text>
+                <text x="15"  y="50">08</text>
+                <text x="35"  y="30">10</text>
+            </svg>
+            <div class="time-text">
+                <span id="hr">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+                <span id="suffix">--</span>
+            </div>
+        </div>	
+	</template>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/vue/1.0.27/vue.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/components/clock.js"></script>
+</body>
+</html>

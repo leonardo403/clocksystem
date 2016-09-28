@@ -1,0 +1,29 @@
+{
+  "name": "clocksystem",
+  "version": "1.0.0",
+  "description": "Clock System",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardo403/clocksystem.git"
+  },
+  "author": "Leonardo Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonardo403/clocksystem/issues"
+  },
+  "homepage": "https://github.com/leonardo403/clocksystem#readme",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-if": "^2.0.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.0"
+  }
+}
